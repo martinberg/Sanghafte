@@ -28,31 +28,34 @@
 %% Storlek på logga %%
 %% Om ingen logga önskas, radera logo.png %%
 \newcommand{\logga}
-{0.8\textwidth}
+{1.2\textwidth}
 %% --- %%
 
 %% Titel %%
 \newcommand{\titel}
-{Titel}
+{Midsommar 2022}
+\newcommand{\topic}
+{Sånghäfte}
 %% --- %%
 
 %% Värdar/Toastmasters %%
-\newcommand{\host}
-{Värd}
+%\newcommand{\host}
+%{Värd}
 %% --- %%
 
 %% Meny %%
-\newcommand{\forratt}
-{Förrätt}
-\newcommand{\huvudratt}
-{Huvudrätt}
-\newcommand{\efterratt}
-{Efterrätt}
+%\newcommand{\forratt}
+%{Förrätt}
+%\newcommand{\huvudratt}
+%{Huvudrätt}
+%\newcommand{\efterratt}
+%{Efterrätt}
 %% --- %%
 
 %% Datum %%
 \newcommand{\datum}
 {den \today}
+\pagenumbering{arabic}
 %% --- %%
 
 %% Melodirad %%
@@ -70,15 +73,19 @@
 
 \begin{document}
 \titelsida
-\inputsong{livet}
-\inputsong{porthos}
-\inputsong{vikingen}
-\inputsong{fetafransyskor}
-\inputsong{bordeaux}
-\inputsong{strejkpapripps}
-\inputsong{gamlakall}
+\thispagestyle{empty} 
 \newpage
-\inputsong{sistapunschvisan}
+\setcounter{page}{1}
+\newpage
+\inputsong{spritbolaget}
+\inputsong{snusen}
+\inputsong{helan}
+\inputsong{blickenmild}
+\newpage
+\inputsong{jagtrorpaakvavit}
+\inputsong{strejkpapripps}
+\inputsong{jagskallfesta}
+\newpage
 \end{document}
 
 % -------------------------------------------------------- %
@@ -185,3 +192,4 @@
 \begin{document}
 \createBooklet
 \end{document}
+
